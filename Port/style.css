@@ -1,0 +1,113 @@
+:root {
+  --cor-principal: #5A1F73;
+}
+
+header,
+.banner,
+.container-tecnologias,
+.container-contato-projeto {
+  padding-left: 150px !important;
+  padding-right: 150px !important;
+}
+
+.container-sobre-mim {
+  width: 60%;
+}
+
+.container-sobre-mim p {
+  color: white;
+}
+
+.banner {
+  height: 85dvh;
+  background-color: var(--cor-principal);
+}
+
+.container-skills {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.container-skills div {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.container-skills div img {
+  width: 100px;
+  height: 100px;
+}
+
+footer {
+  background-color: var(--cor-principal);
+  color: white;
+  font-size: 20px;
+}
+
+.botao-inicio {
+  background-color: transparent;
+  border: none;
+}
+
+.container-contato-projeto {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-bater-papo {
+  width: 35%;
+}
+
+.container-projetos {
+  width: 50%;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.container-projetos::-webkit-scrollbar {
+  width: 3px;
+}
+
+.container-projetos::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.container-projetos::-webkit-scrollbar-thumb {
+  background: var(--cor-principal);
+  border-radius: 10px;
+}
+
+.container-projetos::-webkit-scrollbar-thumb:hover {
+  background: #8a23b3;
+}
+
+.card-projeto .span-linguagens {
+  background-color: #a32cd682;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.container-card-projetos {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-top: 50px;
+}
+
+.botao-curriculo-background {
+  background-color: var(--cor-principal);
+  color: white;
+}
+
+.botao-linguagem {
+  width: 100px;
+}
+
+.dropdown-linguagem {
+  flex-direction: column-reverse;
+}

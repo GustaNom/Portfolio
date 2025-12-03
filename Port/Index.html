@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Gustavo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header class="is-flex is-align-items-center is-justify-content-space-between section pt-4 pb-4">
+    <div class="is-flex is-align-items-center">
+      <figure class="image is-48x48 mr-4">
+        <img class="is-rounded"
+          src="./imagens/Eu.png"
+          alt="Foto do Gustavo" />
+      </figure>
+      <h1 class="title is-5">Gustavo Dos Santos Silva</h1>
+    </div>
+
+    <div>
+      <button class="button botao-curriculo-background">
+        <span class="icon">
+          <i class="fa-regular fa-circle-down"></i>
+        </span>
+        <span class="botao-curriculo">Baixar currículo</span>
+      </button>
+
+      <a href="https://wa.me/5511984208808?text=Ol%C3%A1!%20Seu%20portif%C3%B3lio%20me%20chamou%20a%20aten%C3%A7%C3%A3o.%20Vamos%20conversar%3F" target="_blank">
+        <button class="button">
+          <span class="icon">
+            <i class="fa-brands fa-whatsapp"></i>
+          </span>
+        </button>
+      </a>
+
+      <a href="https://github.com/GustaNom" target="_blank">
+        <button class="button">
+          <span class="icon">
+            <i class="fa-brands fa-github"></i>
+          </span>
+        </button>
+      </a>
+
+      <a href="https://www.linkedin.com/in/gustavo-dos-santos-silva-596677279/" target="_blank">
+        <button class="button">
+          <span class="icon">
+            <i class="fa-brands fa-linkedin"></i>
+          </span>
+        </button>
+      </a>
+
+      <button class="button botao-linguagem">
+        <span class="icon">
+          <img id="bandeira-linguagem" src="./imagens/usa.png" alt="">
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner section is-flex is-align-items-center">
+      <div class="container-sobre-mim">
+        <p id="titulo-banner" class="title mb-3">Criando experiências por meio da tecnologia</p>
+        <p id="descricao-banner" class="subtitle">Profissional dedicado e entusiasta da tecnologia, buscando
+          constantemente novos desafios e
+          oportunidades para aplicar e aprimorar minhas habilidades. Formado em Programador Web Java pelo Instituto PROA
+          e Desenvolvedor Full Stack pela Trybe, e atualmente cursando Análise e Desenvolvimento de Sistemas na FIAP,
+          estou preparado para contribuir em projetos que demandem expertise em desenvolvimento de sistemas e
+          tecnologias web.</p>
+
+        <div>
+          <button id="botao-projeto-banner" class="button is-normal mr-5">Projetos</button>
+          <button id="botao-tecnologias-banner" class="button is-normal">Tecnologias</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container-tecnologias">
+      <h3 id="titulo-tecnologias" class="title is-4">Tecnologias em que eu desenvolvo</h3>
+
+      <div>
+        <div class="container-skills">
+          <div class="box is-flex is-justify-content-center">
+            <img src="./imagens/html.png" alt="HTML">
+          </div>
+
+          <div class="box is-flex is-justify-content-center">
+            <img src="./imagens/css.png" alt="HTML">
+          </div>
+
+          <div class="box is-flex is-justify-content-center">
+            <img src="./imagens/js.png" alt="HTML">
+          </div>
+
+          <div class="box is-flex is-justify-content-center">
+            <img src="./imagens/figma.png" alt="HTML">
+          </div>
+        </div>
+
+        <div class="container-skills">
+          <div class="box is-flex is-justify-content-center">
+            <img src="./imagens/vercel.png" alt="HTML">
+          </div>
+
+          <div class="box is-flex is-justify-content-center">
+            <img src="./imagens/api.png" alt="HTML">
+          </div>
+
+          <div class="box is-flex is-justify-content-center">
+            <img src="./imagens/bulma.png" alt="HTML">
+          </div>
+
+          <div class="box is-flex is-justify-content-center">
+            <img src="./imagens/bulma.png" alt="HTML">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="is-flex container-contato-projeto mb-6">
+      <div class="container-bater-papo">
+        <h5 id="titulo-bater-papo" class="title is-6">Vamos bater um papo?</h5>
+
+        <p id="descricao-bater-papo" class="is-size-6 mb-5">Estou sempre disponível no LinkedIn para discutir os
+          projetos em que estou trabalhando
+          e os processos que
+          estou utilizando no dia a dia. Adoraria trocar uma boa conversa por lá e discutir ideias, tendências da área e
+          oportunidades de colaboração. Aguardo sua mensagem!</p>
+
+        <button id="botao-bater-papo" class="button is-normal">Acessar meu perfil do Linkedin</button>
+      </div>
+
+      <div class="container-projetos pr-3 pl-3">
+        <h6 id="titulo-projetos" class="title is-6">Projetos</h6>
+        <h5 id="subtitulo-projetos" class="title is-4">Projetos que eu mais me orgulho na minha trajetória.</h5>
+
+        <section class="container-card-projetos">
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="section is-flex is-flex-direction-column	is-justify-content-center	is-align-items-center">
+    <button class="button botao-inicio">
+      <span class="icon is-small">
+        <i class="fas fa-arrow-up"></i>
+      </span>
+    </button>
+
+    <p id="titulo-footer">Desenvolvido por Gustavo Dos Santos Silva 🧑🏻‍💻</p>
+    <p id="subtitulo-footer">Obrigado por acessar!</p>
+  </footer>
+  <script src="./js/script.js" type="module"></script>
+</body>
+
+</html>
