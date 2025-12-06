@@ -31,24 +31,6 @@ Design System • Acessibilidade (A11y)
 Git • GitHub • VS Code
 Node.js • npm/yarn • Vercel
 
-📂 Projetos em Destaque
-🎯 Projeto 1 – Interface moderna com React + Tailwind
-
-Uma landing page responsiva com animações suaves e design clean.
-Tecnologias: React, TailwindCSS, Framer Motion
-👉 Repositório: [link]
-
-🎯 Projeto 2 – Dashboard Next.js
-
-Dashboard com dark mode, filtros dinâmicos e componentes reutilizáveis.
-Tecnologias: Next.js, TypeScript, Chart.js
-👉 Repositório: [link]
-
-🎯 Projeto 3 – E-commerce Front-End
-
-Catálogo de produtos, carrinho, filtros e responsividade completa.
-Tecnologias: React, Context API
-👉 Repositório: [link]
 
 📫 Contato
 
