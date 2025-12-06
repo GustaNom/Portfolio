@@ -1,7 +1,8 @@
 import textosIngles from "./textos-ingles.js";
 import textosPortugues from "./textos-portugues.js";
 
-const botaoCurriculo = document.querySelector('.botao-curriculo');
+const botaoCurriculoSpan = document.querySelector('.botao-curriculo');
+const botaoCurriculoBtn = document.querySelector('.botao-curriculo-background');
 const botaoLinguagem = document.querySelector('.botao-linguagem');
 const containerProjetos = document.querySelector('.container-card-projetos');
 
@@ -21,7 +22,8 @@ const subtituloFooter = document.getElementById('subtitulo-footer');
 function trocarLinguagem(linguagem) {
   const dados = linguagem == 'portugues' ? textosPortugues : textosIngles;
 
-  botaoCurriculo.textContent = dados.header.botoes.curriculo;
+  // atualizar texto do botão (span dentro do botão)
+  if (botaoCurriculoSpan) botaoCurriculoSpan.textContent = dados.header.botoes.curriculo;
   tituloBanner.textContent = dados.banner.titulo;
   descricaoBanner.textContent = dados.banner.descricao;
   botaoProjetoBanner.textContent = dados.banner.botoes.projetos;
@@ -67,12 +69,27 @@ function trocarLinguagem(linguagem) {
   });
 }
 
-botaoCurriculo.addEventListener('click', function() {
-  const link = document.createElement('a');
-  link.href = './assets/VITOR_MOUTIM_PT-BR.pdf';
-  link.download = 'GUSTAVO_SANTOS_PT-BR.pdf';
-  link.click();
-});
+// Clique no botão de currículo: tenta baixar o PDF se existir, senão abre LinkedIn
+if (botaoCurriculoBtn) {
+  botaoCurriculoBtn.addEventListener('click', async function() {
+    const pdfPath = './assets/Gustavo_Santos_PT-BR.pdf';
+    try {
+      const res = await fetch(pdfPath, { method: 'HEAD' });
+      if (res.ok) {
+        const link = document.createElement('a');
+        link.href = pdfPath;
+        link.download = 'GUSTAVO_SANTOS_PT-BR.pdf';
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+      } else {
+        window.open('https://www.linkedin.com/in/gustavo-dos-santos-silva-596677279/', '_blank');
+      }
+    } catch (e) {
+      window.open('https://www.linkedin.com/in/gustavo-dos-santos-silva-596677279/', '_blank');
+    }
+  });
+}
 
 botaoLinguagem.addEventListener('click', function() {
   const bandeiraLinguagem = document.getElementById('bandeira-linguagem');
