@@ -5,8 +5,8 @@ const textosPortugues = {
     }
   },
   banner: {
-    titulo: "Criando experiências por meio da tecnologia",
-    descricao: "Profissional dedicado e entusiasta da tecnologia, buscando constantemente novos desafios e oportunidades para aplicar e aprimorar minhas habilidades. Formado em Programador Web Java pelo Instituto PROA e Desenvolvedor Full Stack pela Trybe, e atualmente cursando Análise e Desenvolvimento de Sistemas na FIAP, estou preparado para contribuir em projetos que demandem expertise em desenvolvimento de sistemas e tecnologias web.",
+    titulo: "Talento Autodidata",
+    descricao: "Profissional dedicado e entusiasta da tecnologia, buscando constantemente novos desafios e oportunidades para aplicar e aprimorar minhas habilidades. Estou preparado para contribuir em projetos que demandem expertise em desenvolvimento de sistemas e tecnologias web.",
     botoes: {
       projetos: "Projetos",
       tecnologias: "Tecnologias"
@@ -25,21 +25,42 @@ const textosPortugues = {
     subtitulo: "Projetos que eu mais me orgulho na minha trajetória.",
     lista: [
       {
-        nome: "Caixa Eletrônico",
-        tecnologias: "Angular, ASP.NET, MySQL, JWT, SASS",
-        descricao: "Desenvolvido para o teste técnico do Itaú, este projeto fullstack simula as funcionalidades de um caixa eletrônico, permitindo saques, depósitos, transferências, consulta de extrato, e gerenciando contas correntes e poupanças.",
+        nome: "Gaia",
+        tecnologias: "html, css, javascript, react, typescript ,node.js",
+        descricao: "GAIA é um projeto voltado para a reciclagem, reutilização e redistribuição de produtos, com o objetivo de criar uma rede colaborativa de consumo.",
         botoes: {
           repositorio: "Repositório",
           aplicacao: "Aplicação"
+        },
+        links: {
+          repositorio: "https://github.com/Grupo-03-GAIA",
+          aplicacao: ""
+        }
+      },
+      {
+        nome: "API de Harry Potter",
+        tecnologias: "HTML, CSS, JavaScript, API RESTful",
+        descricao: "Este projeto é uma aplicação que consome uma API de Harry Potter para exibir informações sobre personagens, suas casas e patronos. O objetivo é permitir que fãs do universo criado por J.K. Rowling explorem os detalhes do mundo bruxo de forma interativa e organizada.",
+        botoes: {
+          repositorio: "Repositório",
+          aplicacao: "Aplicação"
+        },
+        links: {
+          repositorio: "https://github.com/GustaNom/HarryPottAPI",
+          aplicacao: ""
         }
       },
       {
         nome: "Site de Notícias",
-        tecnologias: "Angular, ASP.NET, MySQL, JWT, SASS",
+        tecnologias: "Html, CSS",
         descricao: "Portal de notícias com gerenciamento dinâmico de conteúdo, apresentando atualizações em tempo real, autenticação de usuários e design responsivo para múltiplos dispositivos.",
         botoes: {
           repositorio: "Repositório",
           aplicacao: "Aplicação"
+        },
+        links: {
+          repositorio: "https://github.com/GustaNom/Site_Noticias",
+          aplicacao: ""
         }
       }
     ]

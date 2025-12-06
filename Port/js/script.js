@@ -40,13 +40,26 @@ function trocarLinguagem(linguagem) {
   dados.projetos.lista.forEach((projeto) => {
     const div = document.createElement('div');
     div.classList.add('card-projeto');
+    
+    let botoesHTML = '';
+    if (projeto.links.repositorio) {
+      botoesHTML += `<a href="${projeto.links.repositorio}" target="_blank"><button class="button mr-4">${projeto.botoes.repositorio}</button></a>`;
+    } else {
+      botoesHTML += `<button class="button mr-4" disabled>${projeto.botoes.repositorio}</button>`;
+    }
+    
+    if (projeto.links.aplicacao) {
+      botoesHTML += `<a href="${projeto.links.aplicacao}" target="_blank"><button class="button">${projeto.botoes.aplicacao}</button></a>`;
+    } else {
+      botoesHTML += `<button class="button" disabled>${projeto.botoes.aplicacao}</button>`;
+    }
+    
     div.innerHTML = `
       <h6 class="title is-5">${projeto.nome}</h6>
       <p>Tecnologias: <span class="span-linguagens">${projeto.tecnologias}</span></p>
       <p class="mt-5 mb-5">${projeto.descricao}</p>
       <div class="is-flex">
-        <button class="button mr-4">${projeto.botoes.repositorio}</button>
-        <button class="button">${projeto.botoes.aplicacao}</button>
+        ${botoesHTML}
       </div>
     `;
 
