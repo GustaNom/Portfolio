@@ -5,7 +5,6 @@ const botaoCurriculo = document.querySelector('.botao-curriculo');
 const botaoLinguagem = document.querySelector('.botao-linguagem');
 const containerProjetos = document.querySelector('.container-card-projetos');
 
-// TODOS OS ELEMENTOS QUE IRÃO MUDAR DE IDIOMA
 const tituloBanner = document.getElementById('titulo-banner');
 const descricaoBanner = document.getElementById('descricao-banner');
 const botaoProjetoBanner = document.getElementById('botao-projeto-banner');
@@ -18,7 +17,6 @@ const tituloProjetos = document.getElementById('titulo-projetos');
 const subtituloProjetos = document.getElementById('subtitulo-projetos');
 const tituloFooter = document.getElementById('titulo-footer');
 const subtituloFooter = document.getElementById('subtitulo-footer');
-// -------------------------------------------
 
 function trocarLinguagem(linguagem) {
   const dados = linguagem == 'portugues' ? textosPortugues : textosIngles;
