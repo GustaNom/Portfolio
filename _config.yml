@@ -1,0 +1,4 @@
+# GitHub Pages configuration
+markdown: kramdown
+theme: null
+baseurl: ""
