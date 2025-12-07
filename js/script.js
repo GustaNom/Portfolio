@@ -91,18 +91,30 @@ if (botaoCurriculoBtn) {
   });
 }
 
-botaoLinguagem.addEventListener('click', function() {
-  const bandeiraLinguagem = document.getElementById('bandeira-linguagem');
-  const srcAtual = bandeiraLinguagem.getAttribute('src');
+if (botaoLinguagem) {
+  botaoLinguagem.addEventListener('click', function() {
+    const bandeiraLinguagem = document.getElementById('bandeira-linguagem');
+    if (!bandeiraLinguagem) {
+      console.error('Elemento bandeira-linguagem não encontrado');
+      return;
+    }
+    
+    const srcAtual = bandeiraLinguagem.getAttribute('src');
+    console.log('Idioma atual:', srcAtual);
 
-  // Trocar a imagem e idioma
-  if (srcAtual.includes('usa')) {
-    bandeiraLinguagem.setAttribute('src', './imagens/brasil.png');
-    trocarLinguagem('portugues');
-  } else {
-    bandeiraLinguagem.setAttribute('src', './imagens/usa.png');
-    trocarLinguagem('ingles');
-  }
-});
+    // Trocar a imagem e idioma
+    if (srcAtual.includes('usa')) {
+      bandeiraLinguagem.setAttribute('src', './imagens/brasil.png');
+      trocarLinguagem('portugues');
+      console.log('Alterado para português');
+    } else {
+      bandeiraLinguagem.setAttribute('src', './imagens/usa.png');
+      trocarLinguagem('ingles');
+      console.log('Alterado para inglês');
+    }
+  });
+} else {
+  console.error('Botão de linguagem não encontrado');
+}
 
 trocarLinguagem('portugues');
