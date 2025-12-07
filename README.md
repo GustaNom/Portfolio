@@ -32,9 +32,9 @@ Git • GitHub • VS Code
 Node.js • npm/yarn • Vercel
 
 
-📫 Contato
+📫 Contato: https://portfolio-jdr2f3trq-gustavonoms-projects.vercel.app
 
-🌎 Portfólio: https://seusite.com
+🌎 Portfólio: 
 
 💼 LinkedIn: https://www.linkedin.com/in/gustavo-dos-santos-silva-596677279/
 
